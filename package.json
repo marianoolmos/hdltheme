@@ -1,0 +1,142 @@
+{
+  "name": "hdl-theme",
+  "displayName": "HDL Theme",
+  "description": "Syntax Highlighting for all HDLs and more",
+  "icon":"images/hdlThemeIcon.png",
+  "version": "0.1.6",
+  "publisher":"marianoolmos",
+  "license" :"GPL-3.0",
+  "repository": {
+    "type": "git" ,
+    "url": "https://github.com/marianoolmos/hdltheme"
+
+  },
+  "keywords":[
+    "vhdl",
+    "VHDL",
+    "Verilog",
+    "SystemVerilog",
+    "HDL",
+    "HDL Theme",
+    "vhdl highlight",
+    "VHDL syntax",
+    "Verilog syntax",
+    "SystemVerilog syntax",
+    "Verilog highlight",
+    "SystemVerilog highlight",
+    "HDL highlight",
+    "HDL syntax",
+    "syntax highlight",
+    "vhdl syntax highlight",
+    "verilog syntax highlight",
+    "systemverilog syntax highlight",
+    "highlight",
+    "syntax"
+  ],
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Themes",
+    "Programming Languages",
+    "Visualization"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "HDL Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/HDL_Theme-color-theme.json"
+      },
+      {
+        "label": "HDL Green Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/HDL_Theme-color-theme-green.json"
+      }
+    ],
+    "configurationDefaults": {
+      "editor.bracketPairColorization.enabled": true,
+      "editor.guides.bracketPairs": true
+    },
+    "grammars": [
+      {
+        "language": "systemverilog",
+        "scopeName": "source.systemverilog",
+        "path": "./syntaxes/systemverilog.tmLanguage"
+      },
+      {
+        "language": "tcl",
+        "scopeName": "source.tcl",
+        "path": "./syntaxes/tcl.tmLanguage"
+      },
+      {
+        "language": "tlverilog",
+        "scopeName": "source.tlverilog",
+        "path": "./syntaxes/tlverilog.tmLanguage"
+      },
+      {
+        "language": "ucf",
+        "scopeName": "source.ucf",
+        "path": "./syntaxes/ucf.tmLanguage"
+      },
+      {
+        "language": "verilog",
+        "scopeName": "source.verilog",
+        "path": "./syntaxes/verilog.tmLanguage"
+      },
+      {
+        "language": "vhdl",
+        "scopeName": "source.vhdl",
+        "path": "./syntaxes/vhdl.tmLanguage.json" 
+      }
+    ],
+    "languages": [
+      {
+        "id": "systemverilog",
+        "aliases": ["SystemVerilog", "sv"],
+        "extensions": [".sv", ".svh"]
+      },
+      {
+        "id": "tcl",
+        "aliases": ["TCL", "tcl"],
+        "extensions": [".tcl"]
+      },
+      {
+        "id": "tlverilog",
+        "aliases": ["TLVerilog", "tlv"],
+        "extensions": [".tlv"]
+      },
+      {
+        "id": "ucf",
+        "aliases": ["UCF", "ucf"],
+        "extensions": [".ucf"]
+      },
+      {
+        "id": "verilog",
+        "aliases": ["Verilog", "v"],
+        "extensions": [".v"]
+      },
+      {
+        "id": "vhdl",
+        "aliases": ["VHDL"],
+        "extensions": [".vhd", ".vhdl"]
+      }
+    ]
+    
+  },
+  "deprecated": true,
+  "deprecatedVersions": {
+    "0.0.0": true,
+    "0.0.1": true,
+    "0.0.2": true,
+    "0.0.3": true,
+    "0.0.4": true,
+    "0.0.5": true,
+    "0.0.6": true,
+    "0.0.7": true,
+    "0.0.8": true,
+    "0.0.9": true,
+    "0.1.0": true,
+    "0.1.1": true
+  }
+}
